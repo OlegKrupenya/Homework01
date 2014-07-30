@@ -4,14 +4,17 @@ function init() {
 	var btnSearch = document.getElementById('btnSearch');
 	var mainContainer = document.getElementById('mainContainer');
 	var resultsNavBar = document.getElementById('resultsNavBar');
+	var navPath = document.getElementById('navPath');
 	searchResults.style.display = "none";
     resultsNavBar.style.display = "none";
+    navPath.style.display = "none";
 	btnSearch.addEventListener('click', doSearch, false);
 }
 
 function doSearch(event) {
 	event.preventDefault();
 	searchResults.style.display = "block";
+    navPath.style.display = "block";
     resultsNavBar.style.display = "block";
 	mainContainer.style.display = "none";
 	homeNavBar.style.display = "none";
