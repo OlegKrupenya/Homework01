@@ -228,48 +228,80 @@
 				</div>
 			</div>
 
-			<div id="searchResults" class="row">
-				<!-- Featured Products list with thumbnails and description  -->
-				<ul class="list-unstyled">
-					<li class="col-sm-6">
-						<div class="col-md-6">
-							<a href="javascript:void(0)"><img src="assets/img/01.jpg" alt="" class="img-responsive"></a>
-						</div>
+            <div id="filterForm">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                                <label for="txtProduct">Product</label>
+                                <input id="txtProduct" class="form-control" type="text" placeholder="Product title"/>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                                <select class="form-control">
+                                    <option>Category</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                        <div class="row">
 
-						<div class="product-description-holder col-md-8">
-							<h2><a href="javascript:void(0)">Item's title</a></h2>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <label for="txtProduct">Current Price</label>
+                                <input class="form-control" type="text" id="minPrice" placeholder="$ 1000">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                <input class="form-control" type="text" id="maxPrice" placeholder="$ 1500">
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <input class="form-control" type="range" min="10" max="120" step="5" value="30"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div id="searchResults">
+                <div class="row">
+                    <ul class="list-unstyled">
+                        <li class="col-sm-6">
+                            <div class="col-md-6">
+                                <a href="javascript:void(0)"><img src="assets/img/01.jpg" alt="" class="img-responsive"></a>
+                            </div>
 
-							<p>
-								<b>Item's description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-								eiusmod
-								tempor
-								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-								ullamco
-								laboris nisi ut aliquip ex ea commodo consequat.
-							</p>
-						</div>
-					</li>
-					<li class="col-sm-6">
-						<div class="col-md-6">
-							<a href="javascript:void(0)"><img src="assets/img/02.jpg" alt="" class="img-responsive"></a>
-						</div>
+                            <div class="product-description-holder col-md-8">
+                                <h2><a href="javascript:void(0)">Item's title</a></h2>
 
-						<div class="col-md-8">
-							<h2><a href="javascript:void(0)">Item's title</a></h2>
+                                <p>
+                                    <b>Item's description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                    eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="col-sm-6">
+                            <div class="col-md-6">
+                                <a href="javascript:void(0)"><img src="assets/img/02.jpg" alt="" class="img-responsive"></a>
+                            </div>
 
-							<p>
-								<b>Item's description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-								eiusmod
-								tempor
-								incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-								ullamco
-								laboris nisi ut aliquip ex ea commodo consequat.
-							</p>
-						</div>
-					</li>
-				</ul>
-				<!-- / Featured Products list with thumbnails and description  -->
-			</div>
+                            <div class="col-md-8">
+                                <h2><a href="javascript:void(0)">Item's title</a></h2>
+
+                                <p>
+                                    <b>Item's description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                    eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
 			<!-- Footer -->
 			<footer class="text-center">
